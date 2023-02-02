@@ -1,8 +1,10 @@
 # Dots-animation
 
-In this project, small circles are used to create an animation in which first they are generated at random positions and then they travel to the specified location. The dots form The Indian Flag (Working on the Ashoka Chakra). 
+In this project, small circles are used to create an animation in which first they are generated at random positions and then they travel to the specified location. The dots form The Indian Flag.
 
 This animation is created using a javascript library called p5. This library allows users to easily work with geometric shapes and add them to their projects. 
+
+This project is inspired from Techie Blossom - [Indian Flag Animation](https://youtu.be/CGfKtLgXeQg)
 
 <h2> Languages-Used </h2>
 
@@ -14,4 +16,4 @@ This animation is created using a javascript library called p5. This library all
 
 <h2> Screenshot </h2>
 
-![Dots Animation](https://user-images.githubusercontent.com/83511180/214370095-df224adc-b4f9-4ba0-a81f-158448d1050d.png)
+![Flag Final](https://user-images.githubusercontent.com/83511180/216249271-9bb6681a-e173-469b-b9f3-f802e0a73f99.png)
