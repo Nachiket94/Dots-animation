@@ -9,10 +9,11 @@ function Dots(positions, rows, color){
     this.y = random(0, height);  
     this.xnew = positions;
     this.ynew = rows;
-    this.speedx = (this.xnew- this.x)/200;
-    this.speedy = (this.ynew- this.y)/200;
+    this.speedx = (this.xnew- this.x)/160;
+    this.speedy = (this.ynew- this.y)/160;
     this.show = function(){
-        //Color
+        // Color of dots
+        // stroke(1);
         if(color < rownum/3){
             fill(255,103,31); 
         }
@@ -26,42 +27,42 @@ function Dots(positions, rows, color){
         //Create the dots for every frame & check whether they have reached their destination or not
         if(this.speedx > 0 && this.speedy > 0){
             if(this.x < this.xnew && this.y < this.ynew){
-                ellipse(this.x , this.y, this.radius, this.radius);    
+                ellipse(this.x , this.y, this.radius);    
             }else{
-                ellipse(this.xnew,this.ynew,this.radius, this.radius);
+                ellipse(this.xnew,this.ynew,this.radius);
                 this.speedx = 0;
                 this.speedy = 0;
             }
         }
         if(this.speedx < 0 && this.speedy > 0){
             if(this.x > this.xnew && this.y < this.ynew){
-                ellipse(this.x , this.y, this.radius, this.radius);    
+                ellipse(this.x , this.y, this.radius);    
             }else{
-                ellipse(this.xnew,this.ynew,this.radius, this.radius);
+                ellipse(this.xnew,this.ynew,this.radius);
                 this.speedx = 0;
                 this.speedy = 0;
             }
         }
         if(this.speedx > 0 && this.speedy < 0){
             if(this.x < this.xnew && this.y > this.ynew){
-                ellipse(this.x , this.y, this.radius, this.radius);    
+                ellipse(this.x , this.y, this.radius);    
             }else{
-                ellipse(this.xnew,this.ynew,this.radius, this.radius);
+                ellipse(this.xnew,this.ynew,this.radius);
                 this.speedx = 0;
                 this.speedy = 0;
             }
         }
         if(this.speedx < 0 && this.speedy < 0){
             if(this.x > this.xnew && this.y > this.ynew){
-                ellipse(this.x , this.y, this.radius, this.radius);    
+                ellipse(this.x , this.y, this.radius);    
             }else{
-                ellipse(this.xnew,this.ynew,this.radius, this.radius);
+                ellipse(this.xnew,this.ynew,this.radius);
                 this.speedx = 0;
                 this.speedy = 0;
             }
         }
         if(this.speedx == 0 && this.speedy == 0){
-                ellipse(this.xnew,this.ynew,this.radius, this.radius);
+                ellipse(this.xnew,this.ynew,this.radius);
         }      
     }
     
